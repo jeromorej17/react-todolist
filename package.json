@@ -5,7 +5,9 @@
   "dependencies": {
     "jest-cli": "^22.4.3",
     "react": "^15.6.1",
-    "react-dom": "^15.6.1"
+    "react-dom": "^15.6.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   },
   "scripts": {
     "selenium-setup": "selenium-standalone install",
