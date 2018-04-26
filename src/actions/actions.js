@@ -10,7 +10,6 @@ const nextId = ()=> {
 
 const actions = {   
     submitTodo(text) {
-        debugger
         return {
             type:  types.SUBMIT_TODO,
             id: nextId(),

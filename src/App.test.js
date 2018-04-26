@@ -10,7 +10,8 @@ describe('<App /> component', ()=> {
     const submitMock = jest.fn();
     const component = shallow(<App 
                                 state={initialState} 
-                                submitTodo={submitMock} 
+                                submitTodo={submitMock}
+                                todos={[]} 
                               /> 
                              );
     expect(component.exists()).toEqual(true);
