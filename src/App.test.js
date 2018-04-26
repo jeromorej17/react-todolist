@@ -1,10 +1,18 @@
 import React from 'react';
 import { shallow } from 'enzyme';
-import App from './App';
+import { App } from './App';
+import { initialState } from './reducers/reducer';
 
-describe('<App /> component', ()=> {
+
+describe('<App /> component', ()=> { 
+
   it('renders without crashing', () => {
-    const component = shallow(<App />);
+    const submitMock = jest.fn();
+    const component = shallow(<App 
+                                state={initialState} 
+                                submitTodo={submitMock} 
+                              /> 
+                             );
     expect(component.exists()).toEqual(true);
   });
 
