@@ -15,7 +15,14 @@ const actions = {
             id: nextId(),
             text
         };
-    }
+    },
+
+    deleteTodo(id){
+        return {
+            type: types.DELETE_TODO,
+            id:  id
+        };
+    },
 };
 
 export default actions;

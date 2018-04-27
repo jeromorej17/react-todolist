@@ -8,10 +8,12 @@ describe('<App /> component', ()=> {
 
   it('renders without crashing', () => {
     const submitMock = jest.fn();
+    const deleteMock = jest.fn();
     const component = shallow(<App 
                                 state={initialState} 
                                 submitTodo={submitMock}
-                                todos={[]} 
+                                todos={[]}
+                                deleteTodo={deleteMock} 
                               /> 
                              );
     expect(component.exists()).toEqual(true);
