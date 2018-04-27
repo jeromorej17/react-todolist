@@ -22,7 +22,7 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 todos: [
                     ...state.todos.filter(todo =>(
-                        todo.id != action.id
+                        todo.id !== action.id
                     )),
                 ],
             }
